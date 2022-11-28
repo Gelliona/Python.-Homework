@@ -6,7 +6,7 @@ x = int(input("Введите 1 или 0 для X: "))
 y = int(input("Введите 1 или 0 для Y: "))
 z = int(input("Введите 1 или 0 для Z: "))
 
-if (not (x or y or z)) == ((not x) and (not y) and (not z)):
+if not (x or y or z) == (not x and not y and not z):
     print("Равенство ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z ВЕРНО")
 else:
     print("Равенство ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z  НЕ ВЕРНО")

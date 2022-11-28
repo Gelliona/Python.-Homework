@@ -5,17 +5,17 @@
 """
 x = int(input("Введите координату по оси X: "))
 y = int(input("Введите координату по оси Y: "))
-if (x > 0) and (y > 0):
+if x > 0 and y > 0:
     print("1")
-elif (x < 0) and (y > 0):
+elif x < 0 and y > 0:
     print("2")
-elif (x < 0) and (y < 0):
+elif x < 0 and y < 0:
     print("3")
-elif (x > 0) and (y < 0):
+elif x > 0 and y < 0:
     print("4")
-elif (x == 0) and (y != 0):
+elif x == 0 and y != 0:
     print("Точка расположена на оси Y")
-elif (y == 0) and (x != 0):
+elif y == 0 and x != 0:
     print("Точка расположена на оси X")
 else:
     print("Точка расположена в начале координат")
