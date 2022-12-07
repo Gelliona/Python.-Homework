@@ -5,13 +5,15 @@
 """
 
 def to_divide(num1, num2):
-    if num2 == 0:
-        return 'Деление на ноль!'
-    else:
-        return round(num1/num2, 2)
+    try:
+        return num1/num2
+    except ZeroDivisionError:
+        return "Деление на 0!"
 
-
-a = float(input("Введите первое число: "))
-b = float(input("Введите второе число: "))
-print(to_divide(a, b))
+try:
+    a = float(input("Введите первое число: "))
+    b = float(input("Введите второе число: "))
+    print(to_divide(a, b))
+except ValueError:
+    print("Вводите числа!")
 
