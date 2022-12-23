@@ -21,8 +21,8 @@ class Road:
         return (depth * self._weight_m2 * self._width * self._length)/1000
 
 
-road_Samara_Moscow = Road(1000, 20)
-print(f'Длина дороги: {road_Samara_Moscow._length} м')
-print(f'Ширина дороги: {road_Samara_Moscow._width} м')
+road_samara_moscow = Road(1000, 20)
+print(f'Длина дороги: {road_samara_moscow._length} м')
+print(f'Ширина дороги: {road_samara_moscow._width} м')
 print(f'Для покрытия дороги потребуется: '
-      f'{road_Samara_Moscow.weight(5)} т асфальта')
+      f'{road_samara_moscow.weight(5)} т асфальта')

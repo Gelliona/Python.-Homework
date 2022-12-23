@@ -33,5 +33,5 @@ class TrafficLight:
 
 
 t = int(input('Введите количество циклов светофора: '))
-TrafficLight1 = TrafficLight()
-TrafficLight1.working(t)
+traffic_light1 = TrafficLight()
+traffic_light1.working(t)
